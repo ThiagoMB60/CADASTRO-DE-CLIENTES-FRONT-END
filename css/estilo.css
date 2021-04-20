@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+	background-color: rgba(200,200,200,.8);
+}
+
+div.container {
+	box-shadow: 1px 1px 4px black;
+	max-width: 1000px;
+	border-radius: 10px
+}
+
+div.titulo{
+	padding: 15px;
+	background-color: rgba(25,25,112,.8);
+	text-shadow: 1px 1px 4px black;
+	color: #ffffff;
+	border-radius: 10px;
+}
