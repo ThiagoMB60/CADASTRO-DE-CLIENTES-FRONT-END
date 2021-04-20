@@ -19,14 +19,18 @@
 				<div class="container p-3 my-3 border bg-light text-dark">	
 					<div class="titulo border">
 						<h1 class="col-md-12" style="text-align: center;">CADASTRO DE CLIENTES</h1>	
-					</div>			
+					</div>
+
+					
+					<h5>INFORMAÇÕES PESSOAIS</h5>
+
 					<div class="row">
 						<div class="col-md-2" id="divCodigo">
 							<label id="lblCodCli" for ="codigoCli">CODIGO:</label>
 							<input type="number" class="form-control" id="codigoCli" name="codigoCli" required="" min="000001" max="999999">
 						</div>
 
-						<div class="col-md-5" id="divNome">	
+						<div class="col-md-4" id="divNome">	
 							<label for ="nomeCli">NOME:</label>
 							<input type="text" class="form-control" id="nomeCli" name="nomeCli" required="">
 						</div>
@@ -40,11 +44,23 @@
 							</select>
 						</div>
 
-						<div class="col-md-3" id="divNasc">
+						<div class="col-md-2" id="divSexo">
+							<label for ="sexoCli">SEXO:</label>
+							<select id="sexoCli" class="form-control">
+								<option value="">Selecione</option>
+								<option value="homem">HOMEM</option>
+								<option value="mulher">MULHER</option>
+								<option value="outro">OUTRO</option>
+							</select>
+						</div>
+
+						<div class="col-md-2" id="divNasc">
 							<label for ="nascCli">NASCIMENTO:</label>
 							<input type="date" id="nascCli" name="nascCli" class="form-control">
 						</div>	
 					</div>
+					
+					<h5>DOCUMENTOS E CONTATO</h5>
 
 					<div class="row">					
 						<div class="col-md-3" id="divRg">
@@ -52,7 +68,7 @@
 							<input type="text" id="rgCli" name="rgCli" class="form-control">
 						</div>	
 
-						<div class="col-md-4" id="divOrgEmiss">
+						<div class="col-md-5" id="divOrgEmiss">
 							<label for ="orgaoCli">ORGAO EMISSOR:</label>
 							<select id="orgaoCli" class="form-control">
 								<option value="">Selecione</option>
@@ -95,7 +111,7 @@
 							</select>
 						</div>
 
-						<div class="col-md-3" id="divDataEmiss">
+						<div class="col-md-2" id="divDataEmiss">
 							<label for ="emissCli">EMISSAO:</label>
 							<input type="date" id="emissCli" name="emissCli" class="form-control">
 						</div>
@@ -107,19 +123,14 @@
 							<input type="text" id="cpfCli" name="cpfCli" class="form-control">
 						</div>
 
-						<div class="col-md-3" id="divSexo">
-							<label for ="sexoCli">SEXO:</label>
-							<select id="sexoCli" class="form-control">
-								<option value="">Selecione</option>
-								<option value="homem">HOMEM</option>
-								<option value="mulher">MULHER</option>
-								<option value="outro">OUTRO</option>
-							</select>
+						<div class="col-md-3" id="divTel1">
+							<label for ="telCli1">TELEFONE 1:</label>
+							<input type="tel" id="telCli1" name="telCli" class="form-control">
 						</div>
 
-						<div class="col-md-3" id="divTel">
-							<label for ="telCli">TELEFONE:</label>
-							<input type="tel" id="telCli" name="telCli" class="form-control">
+						<div class="col-md-3" id="divTel2">
+							<label for ="telCli2">TELEFONE 2:</label>
+							<input type="tel" id="telCli2" name="telCli" class="form-control">
 						</div>
 
 						<div class="col-md-3" id="divMail">
@@ -128,13 +139,15 @@
 						</div>
 					</div>
 
+					<h5>ENDEREÇO</h5>
+
 					<div class="row">
 						<div class="col-md-3" id="divCep">
 							<label for ="cepCli">CEP:</label>
 							<input type="text" id="cepCli" name="cepCli" class="form-control">
 						</div>
 
-						<div class="col-md-4" id="divRua">
+						<div class="col-md-5" id="divRua">
 							<label for ="ruaCli">RUA:</label>
 							<input type="text" id="ruaCli" name="ruaCli" class="form-control">
 						</div>
@@ -144,7 +157,7 @@
 							<input type="number" id="numeroCli" name="numeroCli" min="1" class="form-control">
 						</div>
 
-						<div class="col-md-3" id="divComp">
+						<div class="col-md-2" id="divComp">
 							<label for ="compleCli">COMPLEMENTO:</label>
 							<input type="text" id="compleCli" name="compleCli" class="form-control">
 						</div>
@@ -203,7 +216,7 @@
 
 					<div id="divObserva">
 						<label for="observaCli">OBSERVAÇÕES:</label>
-						<textarea class="form-control" rows="4" id="observaCli"></textarea>
+						<textarea class="form-control" rows="3" id="observaCli"></textarea>
 					</div>	
 					
 				</div>
